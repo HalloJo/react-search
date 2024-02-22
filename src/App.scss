@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 1280px;
+  max-height: 1000px;
+  width: 1200px;
+  height: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  form {
+    width: 100%;
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 0 0 18px 0;
+      background-color: white;
+      border: none;
+      border-radius: 6px;
+      color: black;
+
+      &::placeholder {
+        color: black;
+      }
+    }
+  }
+}
+
+table {
+  thead {
+    th {
+      background: #646cffaa;
+      padding: 10px;
+      text-align: left;
+    }
+  }
+  tr {
+    text-align: left;
+
+    td {
+      padding: 10px;
+    }
+  }
+  tr:nth-child(odd) {
+    background-color: #303030;
+  }
+}
+
+.no-results {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    background-color: red;
+    padding: 10px;
+    border-radius: 6px;
+  }
+}
